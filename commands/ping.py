@@ -18,8 +18,8 @@ async def get_ping(message: Message, answer: str) -> str:
     if delta < 0:
         delta = "666"
 
-    return f"{answer} Модуль ЛП\n" \
-           f"Ответ через {delta} с"
+    return f"{answer} пинг лп\n" \
+           f"итак, ваш пинг: {delta} с"
 
 
 @user.on.message_handler(FromMe(), text="<prefix:service_prefix> пинг")
